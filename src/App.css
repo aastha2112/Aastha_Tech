@@ -1,42 +1,107 @@
+/*  common hegiht width  */
 #root {
-  max-width: 1280px;
+  background-color: #16425b;
+  color: white;
+}
+.common {
+  height: 100vh;
+  width: 80%;
+  /* padding: 3rem 10rem; */
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* navbar styles */
+
+.navbar {
+  padding: 1rem;
+  color: #d9dcd6;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  border-right: 4px solid #81c3d7;
+  border-radius: 50%;
+  /* padding: 0.3rem; */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navlink {
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navlink:hover {
+  color: #51a2ff;
 }
 
-.card {
-  padding: 2em;
+/* home styles */
+
+.homeText {
+  width: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+/* about styles */
+
+.detail {
+  display: flex;
+  justify-content: space-between;
 }
+
+.detailCont {
+  padding: 1rem;
+  width: 35%;
+}
+
+.personalDetails {
+  width: 85%;
+  /* margin: 2rem auto; */
+}
+
+h3 {
+  padding: 0.3rem;
+}
+
+/* skills styles */
+.block-container {
+  position: relative;
+  transition: 250ms;
+  perspective: 500px;
+}
+
+.block-container .btn-back {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: inherit;
+  height: inherit;
+  transition: 250ms;
+  transform-style: preserve-3d;
+  transform-origin: bottom right;
+  transform: rotateZ(15deg);
+  will-change: transform;
+  box-shadow: 16px 0 40px #e4e4e4;
+}
+
+.block-container .btn-front {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+  background-color: #ffffff33;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  transition: 250ms;
+  transform-style: preserve-3d;
+  transform-origin: top left;
+  overflow: hidden;
+}
+.block-container:hover > .btn-back {
+  transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
+}
+
+.block-container:hover > .btn-front {
+  transform: translateZ(80px) translateY(-5px) rotateX(10deg) rotateY(10deg);
+}
+
+/* contact styles */
