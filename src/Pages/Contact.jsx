@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { HiOutlineMail } from "react-icons/hi";
 import { ImLinkedin } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
@@ -47,8 +45,6 @@ const Contact = () => {
             <p>+91 82196-88585</p>
           </div>
         </div>
-
-        {/* <p>Looking forward to collaborating on exciting projects! 🚀</p> */}
       </div>
     </>
   );
