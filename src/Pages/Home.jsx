@@ -1,4 +1,3 @@
-import React from "react";
 import profilePic from "../assets/profilePic/ProfilePicture.webp";
 
 const Home = ({ scrollToSection, refs }) => {

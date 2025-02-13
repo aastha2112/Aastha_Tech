@@ -1,4 +1,3 @@
-import React from "react";
 import Trendify from "../assets/ProjectSS/Trendify.png";
 import BingeBox from "../assets/ProjectSS/BingeBox.png";
 
@@ -20,7 +19,6 @@ const Projects = () => {
       </h1>
       <div className="common">
         <div className="grid grid-cols-2 gap-20">
-          {/* trendify */}
           <div className="relative bg-[#183850] p-6 rounded-xl shadow-lg w-100 h-120 flex flex-col items-center text-white text-lg font-semibold before:absolute before:inset-0 before:bg-gradient-to-t before:from-blue-500 before:to-transparent before:opacity-20 before:rounded-xl hover:before:opacity-40 before:pointer-events-none transition-all">
             <img
               src={Trendify}
@@ -61,17 +59,6 @@ const Projects = () => {
               View Project
             </a>
           </div>
-
-          {/* -------------------------------------------------- */}
-          {/* 
-          2. E-Commerce Web App 🔹 Tech Stack: React, Redux, Firebase, Stripe
-          API 🔹 Description: A feature-rich e-commerce platform with user
-          authentication, real-time database, and payment integration. 🔹 Live
-          Demo: yourwebsite.com/ecommerce | GitHub:
-          github.com/yourname/ecommerce
-        </div>
-        <div>
-          */}
         </div>
       </div>
     </>
