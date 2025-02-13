@@ -1,4 +1,3 @@
-import React from "react";
 import profilePic from "../assets/profilePic/prof1.webp";
 
 const About = () => {
