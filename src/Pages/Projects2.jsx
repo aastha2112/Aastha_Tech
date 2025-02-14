@@ -4,21 +4,15 @@ import BingeBox from "../assets/ProjectSS/BingeBox.png";
 
 const Projects = () => {
   return (
-    <section className="common flex flex-col items-center px-4 md:px-10 mt-14 md:mt-20 py-12 md:py-16">
-      {/* Animated Heading */}
-      <motion.h1
-        className="text-center text-3xl md:text-5xl font-semibold mb-6 md:mb-8"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: false }} // Ensures animation on every scroll
-      >
+    <section className="common flex flex-col items-center px-4 md:px-10 pt-20 md:pt-28 pb-16 md:pb-24 ">
+      {/* Heading  */}
+      <h1 className="text-center text-4xl md:text-5xl font-semibold mb-10 md:mb-14 mt-50">
         Proje
         <span className="text-blue-500 font-bold">cts</span>
-      </motion.h1>
+      </h1>
 
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 w-full max-w-6xl">
+      {/* Projects Grid  */}
+      <div className="w-full max-w-6xl flex flex-col gap-12 md:gap-20">
         {[
           {
             name: "Trendify",
@@ -35,11 +29,11 @@ const Projects = () => {
         ].map((project, index) => (
           <motion.div
             key={project.name}
-            className="relative bg-[#183850] p-6 rounded-xl shadow-lg flex flex-col items-center text-white text-lg font-semibold before:absolute before:inset-0 before:bg-gradient-to-t before:from-blue-500 before:to-transparent before:opacity-20 before:rounded-xl hover:before:opacity-40 before:pointer-events-none transition-all w-full"
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            className="bg-[#183850] p-6 rounded-xl shadow-lg flex flex-col items-center text-white text-lg font-semibold hover:shadow-2xl transition-all w-full"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            viewport={{ once: false }} // Re-animates every time it enters view
+            viewport={{ once: false }}
           >
             <img
               src={project.img}
