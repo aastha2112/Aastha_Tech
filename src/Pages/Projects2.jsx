@@ -66,7 +66,7 @@ const Projects = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4 mt-6 z-50">
               <a
                 href={project.liveLink}
                 target="_blank"
