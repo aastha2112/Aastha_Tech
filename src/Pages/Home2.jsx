@@ -57,7 +57,7 @@ const Home = ({ scrollToSection, refs }) => {
         </h3>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mt-5">
+        <div className="flex flex-col sm:flex-row gap-4 mt-5 z-50">
           <motion.button
             className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full hover:bg-blue-600 shadow-md transition-all"
             onClick={() => scrollToSection(refs.contactRef)}

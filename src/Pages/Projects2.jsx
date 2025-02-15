@@ -32,7 +32,7 @@ const Projects = () => {
         ].map((project, index) => (
           <motion.div
             key={project.name}
-            className="bg-[#183850] p-6 rounded-xl shadow-lg flex flex-col items-center text-white text-lg font-semibold hover:shadow-2xl transition-all w-full md:w-1/2"
+            className="bg-[#183850] p-6 rounded-xl shadow-lg flex flex-col items-center text-white text-lg font-semibold hover:shadow-2xl transition-all w-full md:w-1/2 z-50"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -66,7 +66,7 @@ const Projects = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex gap-4 mt-6 z-50">
+            <div className="flex gap-4 mt-6 ">
               <a
                 href={project.liveLink}
                 target="_blank"
