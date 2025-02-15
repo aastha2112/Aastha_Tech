@@ -35,7 +35,7 @@ const Socials = () => {
           href={social.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#183850] p-4 sm:p-5 rounded-full shadow-lg text-3xl sm:text-4xl flex items-center justify-center transition-all duration-300 hover:scale-110 z-50"
+          className="bg-[#183850] p-4 sm:p-5 rounded-full shadow-lg text-3xl sm:text-4xl flex items-center justify-center transition-all duration-300 hover:scale-110 z-20"
           whileHover={{ scale: 1.2, rotate: 5 }}
           whileTap={{ scale: 0.9 }}
         >

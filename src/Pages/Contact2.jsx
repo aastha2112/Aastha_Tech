@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { HiOutlineMail } from "react-icons/hi";
-import { ImLinkedin } from "react-icons/im";
-import { FaGithub } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { IoCallSharp } from "react-icons/io5";
@@ -59,8 +57,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center px-4 md:px-10 py-16">
-      <h1 className="text-center text-4xl sm:text-5xl font-semibold mb-20 mt-200 md:mt-20">
+    <section className=" flex flex-col items-center px-4 md:px-10 py-5">
+      <h1 className="text-center text-4xl sm:text-5xl font-semibold mb-20 pt-250 md:mt-20">
         Contact <span className="text-blue-500 font-bold">Me</span>
       </h1>
 
@@ -102,7 +100,7 @@ const Contact = () => {
 
         <motion.form
           onSubmit={handleSubmit}
-          className="w-full md:w-1/2 bg-[#183850] p-6 rounded-xl shadow-lg text-white flex flex-col gap-4 z-50"
+          className="w-full md:w-1/2 bg-[#183850] p-6 rounded-xl shadow-lg text-white flex flex-col gap-4 z-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

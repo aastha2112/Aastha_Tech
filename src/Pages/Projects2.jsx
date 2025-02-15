@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section className="common flex flex-col items-center px-4 md:px-10 pt-20 md:pt-28 pb-16 md:pb-24">
       {/* Heading */}
-      <h1 className="text-center text-4xl md:text-5xl font-semibold mb-12 mt-240 md:mt-15 md:mb-30">
+      <h1 className="text-center text-4xl md:text-5xl font-semibold mb-12 pt-300 md:mt-15 md:mb-30">
         Proje<span className="text-blue-500 font-bold">cts</span>
       </h1>
 
@@ -32,7 +32,7 @@ const Projects = () => {
         ].map((project, index) => (
           <motion.div
             key={project.name}
-            className="bg-[#183850] p-6 rounded-xl shadow-lg flex flex-col items-center text-white text-lg font-semibold hover:shadow-2xl transition-all w-full md:w-1/2 z-50"
+            className="bg-[#183850] p-6 rounded-xl shadow-lg flex flex-col items-center text-white text-lg font-semibold hover:shadow-2xl transition-all w-full md:w-1/2 z-20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}

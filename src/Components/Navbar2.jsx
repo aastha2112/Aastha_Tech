@@ -7,7 +7,6 @@ const Navbar = ({ scrollToSection, refs }) => {
 
   return (
     <>
-      {/* Navbar - Fixed for Desktop */}
       <nav className="navbar fixed top-0 w-full flex justify-between items-center  p-5  z-50">
         <h1 className="logo pl-5 pr-2 text-[#81c3d7] text-5xl font-black">A</h1>
 

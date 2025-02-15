@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import profilePic from "../assets/profilePic/prof1.webp";
 import ProfPic from "../assets/profilePic/ProfPic.jpg";
 
 const About = () => {
@@ -27,7 +26,7 @@ const About = () => {
     >
       {/* Heading */}
       <motion.h2
-        className="text-center text-4xl font-semibold mb-30 mt-100 md:mt-10"
+        className="text-center text-4xl font-semibold mb-30 mt-130 md:mt-20"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
@@ -83,7 +82,7 @@ const About = () => {
           <button
             onClick={handleDownloadResume}
             style={{ pointerEvents: "auto" }}
-            className="mt-8 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg text-lg transition-all duration-300 flex items-center gap-2 z-50 relative"
+            className="mt-8 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg text-lg transition-all duration-300 flex items-center gap-2 z-30 relative"
           >
             📄 Download Resume
           </button>
