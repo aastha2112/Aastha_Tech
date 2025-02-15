@@ -18,7 +18,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="common flex flex-col items-center px-6 pt-8 md:pt-36 pb-16 md:pb-24"
+      className="common flex flex-col items-center px-6 pt-58 md:pt-26 pb-16 md:pb-24 "
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -26,7 +26,7 @@ const About = () => {
     >
       {/* Heading */}
       <motion.h2
-        className="text-center text-4xl font-semibold mb-30 mt-130 md:mt-20"
+        className="text-center font-semibold mb-30 mt-130 md:mt-20 text-4xl sm:text-5xl"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
