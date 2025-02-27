@@ -3,13 +3,13 @@ import ProfPic from "../assets/profilePic/ProfPic.jpg";
 
 const About = () => {
   const handleDownloadResume = () => {
-    const resumeUrl = "/Aastha_Tech/Aastha_Resume.pdf";
+    const resumeUrl = "/Aastha_Tech/Aastha_FrontendDev_Resume.pdf";
     console.log("button clicked!");
     window.open(resumeUrl, "_blank");
 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Aastha_Resume.pdf";
+    link.download = "Aastha_FrontendDev_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -18,7 +18,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="common flex flex-col items-center px-6 pt-58 md:pt-26 pb-16 md:pb-24 "
+      className="common flex flex-col items-center px-6  md:pt-26 pb-16 md:pb-24 "
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -26,7 +26,7 @@ const About = () => {
     >
       {/* Heading */}
       <motion.h2
-        className="text-center font-semibold mb-30 mt-130 md:mt-20 text-4xl sm:text-5xl"
+        className="text-center font-semibold mb-20 mt-16 md:mt-20 text-4xl sm:text-5xl"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
@@ -68,8 +68,8 @@ const About = () => {
               Frontend Developer
             </span>{" "}
             who enjoys bringing creative ideas to life through code. With a
-            strong foundation in React, Redux, JavaScript, HTML, and CSS, I
-            focus on building intuitive, high-performance, and accessible user
+            strong foundation in React, Redux, and JavaScript, I focus on
+            building intuitive, high-performance, and accessible user
             interfaces.
           </p>
 
@@ -82,7 +82,7 @@ const About = () => {
           <button
             onClick={handleDownloadResume}
             style={{ pointerEvents: "auto" }}
-            className="mt-8 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg text-lg transition-all duration-300 flex items-center gap-2 z-30 relative"
+            className="mt-8 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg text-lg transition-all duration-300 flex items-center gap-2 z-10 relative"
           >
             📄 Download Resume
           </button>

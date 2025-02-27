@@ -7,6 +7,7 @@ import Contact2 from "./Pages/Contact2";
 import Skills2 from "./Pages/Skills2";
 import About2 from "./Pages/About2";
 import Footer from "./Components/Footer";
+import GradientCursor from "./Components/GradientCursor";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -20,6 +21,7 @@ const App = () => {
   };
   return (
     <>
+      <GradientCursor />
       <Navbar2
         scrollToSection={scrollToSection}
         refs={{ homeRef, aboutRef, skillsRef, projectsRef, contactRef }}

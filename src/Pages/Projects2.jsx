@@ -4,9 +4,9 @@ import BingeBox from "../assets/ProjectSS/BingeBox.png";
 
 const Projects = () => {
   return (
-    <section className="common flex flex-col items-center px-4 md:px-10 pt-200 md:pt-28 pb-16 md:pb-24">
+    <section className="common flex flex-col items-center px-4 md:px-10  md:pt-8 pb-16 md:pb-24">
       {/* Heading */}
-      <h1 className="text-center text-4xl md:text-5xl font-semibold mb-12 md:pt-20 pt-280 md:mt-15 md:mb-30">
+      <h1 className="text-center text-4xl md:text-5xl font-semibold mb-12 md:pt-8 mt-8 md:mt-15 md:mb-30">
         Proje<span className="text-blue-500 font-bold">cts</span>
       </h1>
 

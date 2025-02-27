@@ -57,8 +57,8 @@ const Contact = () => {
   };
 
   return (
-    <section className=" flex flex-col items-center px-4 md:px-10 py-5 pt-100 md:pt-28">
-      <h1 className="text-center text-4xl sm:text-5xl font-semibold mb-20 pt-250   md:pt-20 md:mt-20">
+    <section className=" flex flex-col items-center px-4 md:px-10 py-5 pt-8 ">
+      <h1 className="text-center text-4xl sm:text-5xl font-semibold mb-20   md:pt-8 md:mt-8">
         Contact <span className="text-blue-500 font-bold">Me</span>
       </h1>
 

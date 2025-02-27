@@ -4,6 +4,18 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = ({ scrollToSection, refs }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const handleDownloadResume = () => {
+    const resumeUrl = "/Aastha_Tech/Aastha_FrontendDev_Resume.pdf";
+    console.log("button clicked!");
+    window.open(resumeUrl, "_blank");
+
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Aastha_FrontendDev_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -21,6 +33,12 @@ const Navbar = ({ scrollToSection, refs }) => {
               {item}
             </button>
           ))}
+          <button
+            onClick={handleDownloadResume}
+            className="navlink text-white text-center text-lg hover:text-[#81c3d7] transition-all"
+          >
+            Resume
+          </button>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -68,6 +86,12 @@ const Navbar = ({ scrollToSection, refs }) => {
                   </button>
                 )
               )}
+              <button
+                onClick={handleDownloadResume}
+                className="navlink hover:text-[#81c3d7] transition-all text-left w-full px-4"
+              >
+                Resume
+              </button>
             </div>
           </motion.div>
         )}

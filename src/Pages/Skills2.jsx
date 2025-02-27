@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <section className="common flex flex-col items-center px-4 md:px-10 py-10 pt-150 md:pt-20">
+    <section className="common flex flex-col items-center px-4 md:px-10 py-10  md:pt-20">
       {/* Heading */}
       <motion.h2
-        className="text-center text-3xl md:text-5xl font-medium mb-15 md:mb-38 mt-180 md:mt-10"
+        className="text-center text-3xl md:text-5xl font-medium mb-15 md:mb-38  md:mt-10"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

@@ -4,13 +4,13 @@ import profilePic from "../assets/profilePic/ProfilePicture.webp";
 const Home = ({ scrollToSection, refs }) => {
   return (
     <motion.div
-      className="common flex flex-col items-center text-center md:text-left md:flex-row gap-8 md:gap-16 md:mb-24 pt-10"
+      className="common flex flex-col items-center text-center pt-16 md:text-left md:flex-row gap-8 md:gap-16 md:mb-24 md:pt-26 md:pl-8"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <motion.div
-        className="relative p-4 rounded-full bg-gradient-to-b from-blue-600 to-[#2f6690] shadow-xl"
+        className="relative p-1 rounded-full bg-gradient-to-b from-blue-600 to-[#2f6690] shadow-xl"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -18,7 +18,7 @@ const Home = ({ scrollToSection, refs }) => {
         <img
           src={profilePic}
           alt="Profile"
-          className="w-32 sm:w-40 md:w-52 lg:w-60 rounded-full border-4 border-[#eef4ed]"
+          className="w-32 sm:w-40 md:w-80 lg:w-60 rounded-full border-4 border-[#eef4ed]"
         />
       </motion.div>
 
