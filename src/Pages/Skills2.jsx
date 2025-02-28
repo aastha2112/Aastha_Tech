@@ -18,7 +18,7 @@ const Skills = () => {
 
       {/* Skills Grid */}
       <div className="flex flex-col items-center gap-6 md:gap-10">
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-6 md:gap-10">
+        <div className="grid grid-cols-3 md:grid-cols-4 p-2 gap-6 md:gap-20">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}

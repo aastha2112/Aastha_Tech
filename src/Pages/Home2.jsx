@@ -46,7 +46,7 @@ const Home = ({ scrollToSection, refs }) => {
           FRONT-END DEVELOPER
         </motion.p>
 
-        <p className="text-md sm:text-lg mt-4 text-gray-300 px-2 sm:px-0">
+        <p className="text-md sm:text-lg mt-4 text-gray-300 px-2 sm:px-0 ">
           A Web Developer based in India, specializing in React, Redux, and
           JavaScript. Passionate about clean code, performance, and seamless
           user experiences.

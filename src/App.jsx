@@ -8,6 +8,7 @@ import Skills2 from "./Pages/Skills2";
 import About2 from "./Pages/About2";
 import Footer from "./Components/Footer";
 import GradientCursor from "./Components/GradientCursor";
+import Home from "./Pages/Home";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -27,7 +28,7 @@ const App = () => {
         refs={{ homeRef, aboutRef, skillsRef, projectsRef, contactRef }}
       />
       <div ref={homeRef}>
-        <Home2
+        <Home
           scrollToSection={scrollToSection}
           refs={{ projectsRef, contactRef }}
         />
