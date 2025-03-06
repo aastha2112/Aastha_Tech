@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Trendify from "../assets/ProjectSS/Trendify.png";
 import BingeBox from "../assets/ProjectSS/BingeBox.png";
+import StoryCraftUI from "../assets/ProjectSS/StoryCraftUI.png";
 
 const Projects = () => {
   return (
@@ -11,7 +12,7 @@ const Projects = () => {
       </h1>
 
       {/* Projects Grid */}
-      <div className="w-full max-w-6xl flex flex-col md:flex-row gap-12 md:gap-14">
+      <div className="w-full max-w-6xl flex flex-col md:grid md:grid-cols-2  gap-12 md:gap-14">
         {[
           {
             name: "Trendify",
@@ -22,17 +23,25 @@ const Projects = () => {
             tech: ["HTML", "CSS", "JavaScript", "Glitch"],
           },
           {
-            name: "BingeBox",
-            img: BingeBox,
-            liveLink: "https://aastha2112.github.io/BingeBox/",
-            codeLink: "https://github.com/aastha2112/BingeBox",
-            desc: "A smart entertainment hub with user authentication, real-time recommendations, and a seamless streaming experience.",
-            tech: ["React", "CSS", "HTML"],
+            name: "StoryCraft",
+            img: StoryCraftUI,
+            liveLink: "https://storycraft-baba5.web.app/",
+            codeLink: "https://github.com/aastha2112/StoryCraft",
+            desc: "A collaborative storytelling platform with real-time contributions and user authentication.",
+            tech: ["React", "Redux", "Firebase", "ChakraUI"],
           },
+          // {
+          //   name: "BingeBox",
+          //   img: BingeBox,
+          //   liveLink: "https://aastha2112.github.io/BingeBox/",
+          //   codeLink: "https://github.com/aastha2112/BingeBox",
+          //   desc: "A smart entertainment hub with user authentication, real-time recommendations, and a seamless streaming experience.",
+          //   tech: ["React", "CSS", "HTML"],
+          // },
         ].map((project, index) => (
           <motion.div
             key={project.name}
-            className="bg-[#183850] p-6 rounded-xl shadow-lg flex flex-col items-center text-white text-lg font-semibold hover:shadow-2xl transition-all w-full md:w-1/2 z-20"
+            className="bg-[#183850] p-6 rounded-xl shadow-lg flex flex-col items-center text-white text-lg font-semibold hover:shadow-2xl transition-all w-full md:w-full z-20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
