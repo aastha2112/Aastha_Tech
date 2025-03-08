@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import Trendify from "../assets/ProjectSS/Trendify.png";
-import BingeBox from "../assets/ProjectSS/BingeBox.png";
+// import BingeBox from "../assets/ProjectSS/BingeBox.png";
+import Drum_Kit from "../assets/ProjectSS/Drum_Kit.png";
+import Digital_Clock from "../assets/ProjectSS/Digital_Clock.png";
+
 import StoryCraftUI from "../assets/ProjectSS/StoryCraftUI.png";
 
 const Projects = () => {
@@ -30,14 +33,26 @@ const Projects = () => {
             desc: "A collaborative storytelling platform with real-time contributions and user authentication.",
             tech: ["React", "Redux", "Firebase", "ChakraUI"],
           },
-          // {
-          //   name: "BingeBox",
-          //   img: BingeBox,
-          //   liveLink: "https://aastha2112.github.io/BingeBox/",
-          //   codeLink: "https://github.com/aastha2112/BingeBox",
-          //   desc: "A smart entertainment hub with user authentication, real-time recommendations, and a seamless streaming experience.",
-          //   tech: ["React", "CSS", "HTML"],
-          // },
+          {
+            name: "Drum Kit",
+            img: Drum_Kit,
+            liveLink:
+              "https://aastha2112.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/",
+            codeLink:
+              "https://github.com/aastha2112/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit",
+            desc: "A fun and interactive drum kit that lets users play different drum sounds with keyboard presses or clicks.",
+            tech: ["JavaScript", "CSS", "HTML"],
+          },
+          {
+            name: "Digital Clock",
+            img: Digital_Clock,
+            liveLink:
+              "https://aastha2112.github.io/JavaScript30/digital_clock/",
+            codeLink:
+              "https://github.com/aastha2112/JavaScript30/tree/master/digital_clock",
+            desc: "A responsive digital clock that displays the day, hours, minutes, and seconds, with a smooth light and dark theme switch.",
+            tech: ["JavaScript", "CSS", "HTML"],
+          },
         ].map((project, index) => (
           <motion.div
             key={project.name}
