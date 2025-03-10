@@ -3,13 +3,13 @@ import ProfPic from "../assets/profilePic/ProfPic.jpg";
 
 const About = () => {
   const handleDownloadResume = () => {
-    const resumeUrl = "/Aastha_Tech/Aastha_FrontendDev_Resume.pdf";
+    const resumeUrl = "/Aastha_Tech/Aastha_Frontend_Dev_Resume.pdf";
     console.log("button clicked!");
     window.open(resumeUrl, "_blank");
 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Aastha_FrontendDev_Resume.pdf";
+    link.download = "Aastha_Frontend_Dev_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
