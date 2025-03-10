@@ -3,7 +3,7 @@ import Trendify from "../assets/ProjectSS/Trendify.png";
 // import BingeBox from "../assets/ProjectSS/BingeBox.png";
 import Drum_Kit from "../assets/ProjectSS/Drum_Kit.png";
 import Digital_Clock from "../assets/ProjectSS/Digital_Clock.png";
-
+import Weatherly from "../assets/ProjectSS/WeatherlySS.png";
 import StoryCraftUI from "../assets/ProjectSS/StoryCraftUI.png";
 
 const Projects = () => {
@@ -17,6 +17,15 @@ const Projects = () => {
       {/* Projects Grid */}
       <div className="w-full max-w-6xl flex flex-col md:grid md:grid-cols-2  gap-12 md:gap-14">
         {[
+          {
+            name: "Weatherly",
+            img: Weatherly,
+            liveLink:
+              "https://weatherly-hfyas7hox-aastha-lakhanpals-projects.vercel.app/",
+            codeLink: "https://github.com/aastha2112/Weatherly/tree/master",
+            desc: "A weather app providing real-time updates on temperature, humidity, wind speed, and more, with a seamless city search feature.",
+            tech: ["React", "TailwindCSS", "Vercel"],
+          },
           {
             name: "Trendify",
             img: Trendify,
