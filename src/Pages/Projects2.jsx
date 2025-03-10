@@ -20,8 +20,7 @@ const Projects = () => {
           {
             name: "Weatherly",
             img: Weatherly,
-            liveLink:
-              "https://weatherly-hfyas7hox-aastha-lakhanpals-projects.vercel.app/",
+            liveLink: "https://weatherly-navy.vercel.app/",
             codeLink: "https://github.com/aastha2112/Weatherly/tree/master",
             desc: "A weather app providing real-time updates on temperature, humidity, wind speed, and more, with a seamless city search feature.",
             tech: ["React", "TailwindCSS", "Vercel"],
