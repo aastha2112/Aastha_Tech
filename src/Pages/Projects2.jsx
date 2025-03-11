@@ -5,6 +5,7 @@ import Drum_Kit from "../assets/ProjectSS/Drum_Kit.png";
 import Digital_Clock from "../assets/ProjectSS/Digital_Clock.png";
 import Weatherly from "../assets/ProjectSS/WeatherlySS.png";
 import StoryCraftUI from "../assets/ProjectSS/StoryCraftUI.png";
+import QuickChat from "../assets/ProjectSS/QuickChat.png";
 
 const Projects = () => {
   return (
@@ -17,6 +18,14 @@ const Projects = () => {
       {/* Projects Grid */}
       <div className="w-full max-w-6xl flex flex-col md:grid md:grid-cols-2  gap-12 md:gap-14">
         {[
+          {
+            name: "QuickChat Buddy",
+            img: QuickChat,
+            liveLink: "https://quickchatbuddy.web.app/",
+            codeLink: "https://github.com/aastha2112/Quick_Chat",
+            desc: "QuickChat is a responsive chatbot app with real-time messaging, Firebase authentication, and a friendly bot named Bubbles.",
+            tech: ["React", "Redux", "TailwindCSS", "Firebase"],
+          },
           {
             name: "Weatherly",
             img: Weatherly,
