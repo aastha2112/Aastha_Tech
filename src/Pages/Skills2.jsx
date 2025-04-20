@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { skills } from "../constants";
 import { motion } from "framer-motion";
 
 const Skills = () => {
+  const [hoveredSkill, setHoveredSkill] = useState(null);
+
   return (
     <section className="common flex flex-col items-center px-4 md:px-10 py-10  md:pt-20">
       {/* Heading */}
@@ -27,6 +29,8 @@ const Skills = () => {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: false }}
+              onMouseEnter={() => setHoveredSkill(skill.name)}
+              onMouseLeave={() => setHoveredSkill(null)}
             >
               <div className="btn-back rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center shadow-lg">
@@ -36,6 +40,13 @@ const Skills = () => {
                   className="w-2/5 h-2/5 md:w-1/2 md:h-1/2 object-contain"
                 />
               </div>
+
+              {/* Chatbox with skill name */}
+              {hoveredSkill === skill.name && (
+                <div className="absolute -bottom-6 z-10 left-1/2  transform -translate-x-1/2  p-2 bg-gray-700 text-white rounded-lg shadow-lg">
+                  <span>{skill.name}</span>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

@@ -10,6 +10,9 @@ import chakraUI from "./chakraUI.svg";
 import vercel from "./vercel.svg";
 import netlify from "./netlify.svg";
 import responsive from "./responsive.svg";
+import typescript from "./typescript.svg";
+import nextjs from "./nextjs.svg";
+import firebase from "./firebase.svg";
 
 export {
   css,
@@ -24,4 +27,7 @@ export {
   vercel,
   netlify,
   responsive,
+  nextjs,
+  firebase,
+  typescript,
 };

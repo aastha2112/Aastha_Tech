@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import Trendify from "../assets/ProjectSS/Trendify.png";
-import BingeBox from "../assets/ProjectSS/BingeBox.png";
+// import BingeBox from "../assets/ProjectSS/BingeBox.png";
+import Drum_Kit from "../assets/ProjectSS/Drum_Kit.png";
+import Digital_Clock from "../assets/ProjectSS/Digital_Clock.png";
+import Weatherly from "../assets/ProjectSS/WeatherlySS.png";
 import StoryCraftUI from "../assets/ProjectSS/StoryCraftUI.png";
+import QuickChat from "../assets/ProjectSS/QuickChat.png";
+import Nuke from "../assets/ProjectSS/Nuke.png";
 
 const Projects = () => {
   return (
@@ -15,12 +20,21 @@ const Projects = () => {
       <div className="w-full max-w-6xl flex flex-col md:grid md:grid-cols-2  gap-12 md:gap-14">
         {[
           {
-            name: "Trendify",
-            img: Trendify,
-            liveLink: "https://aastha2112.github.io/Trendify/",
-            codeLink: "https://github.com/aastha2112/Trendify",
-            desc: "A modern fashion e-commerce platform with user authentication, real-time inventory, and seamless payment integration.",
-            tech: ["HTML", "CSS", "JavaScript", "Glitch"],
+            name: "Nuke Shop",
+            img: Nuke,
+            liveLink: "https://nuke-p4rh.vercel.app/",
+            codeLink: "https://github.com/aastha2112/Nuke",
+            desc: "Nuke is a modern fashion and skincare e-commerce website with a sleek design, smooth navigation, and a fully responsive user experience.",
+            tech: ["Next.js", "TypeScript", "TailwindCSS", "Wix", "Vercel"],
+          },
+
+          {
+            name: "Weatherly",
+            img: Weatherly,
+            liveLink: "https://weatherly-navy.vercel.app/",
+            codeLink: "https://github.com/aastha2112/Weatherly/tree/master",
+            desc: "A weather app providing real-time updates on temperature, humidity, wind speed, and more, with a seamless city search feature.",
+            tech: ["React", "TailwindCSS", "Vercel"],
           },
           {
             name: "StoryCraft",
@@ -30,14 +44,43 @@ const Projects = () => {
             desc: "A collaborative storytelling platform with real-time contributions and user authentication.",
             tech: ["React", "Redux", "Firebase", "ChakraUI"],
           },
-          // {
-          //   name: "BingeBox",
-          //   img: BingeBox,
-          //   liveLink: "https://aastha2112.github.io/BingeBox/",
-          //   codeLink: "https://github.com/aastha2112/BingeBox",
-          //   desc: "A smart entertainment hub with user authentication, real-time recommendations, and a seamless streaming experience.",
-          //   tech: ["React", "CSS", "HTML"],
-          // },
+          {
+            name: "QuickChat Buddy",
+            img: QuickChat,
+            liveLink: "https://quickchatbuddy.web.app/",
+            codeLink: "https://github.com/aastha2112/Quick_Chat",
+            desc: "QuickChat is a responsive chatbot app with real-time messaging, Firebase authentication, and a friendly bot named Bubbles.",
+            tech: ["React", "Redux", "TailwindCSS", "Firebase"],
+          },
+          {
+            name: "Trendify",
+            img: Trendify,
+            liveLink: "https://aastha2112.github.io/Trendify/",
+            codeLink: "https://github.com/aastha2112/Trendify",
+            desc: "A modern fashion e-commerce platform with user authentication, real-time inventory, and seamless payment integration.",
+            tech: ["HTML", "CSS", "JavaScript", "Glitch"],
+          },
+
+          {
+            name: "Drum Kit",
+            img: Drum_Kit,
+            liveLink:
+              "https://aastha2112.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/",
+            codeLink:
+              "https://github.com/aastha2112/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit",
+            desc: "A fun and interactive drum kit that lets users play different drum sounds with keyboard presses or clicks.",
+            tech: ["JavaScript", "CSS", "HTML"],
+          },
+          {
+            name: "Digital Clock",
+            img: Digital_Clock,
+            liveLink:
+              "https://aastha2112.github.io/JavaScript30/digital_clock/",
+            codeLink:
+              "https://github.com/aastha2112/JavaScript30/tree/master/digital_clock",
+            desc: "A responsive digital clock that displays the day, hours, minutes, and seconds, with a smooth light and dark theme switch.",
+            tech: ["JavaScript", "CSS", "HTML"],
+          },
         ].map((project, index) => (
           <motion.div
             key={project.name}

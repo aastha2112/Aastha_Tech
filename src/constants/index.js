@@ -11,27 +11,20 @@ import {
   vercel,
   netlify,
   responsive,
+  typescript,
+  nextjs,
+  firebase,
 } from "../assets/icons";
 
 export const skills = [
   {
-    imageUrl: css,
-    name: "CSS",
+    imageUrl: html,
+    name: "HTML",
     type: "Frontend",
   },
   {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
-  },
-  {
-    imageUrl: github,
-    name: "GitHub",
-    type: "Version Control",
-  },
-  {
-    imageUrl: html,
-    name: "HTML",
+    imageUrl: css,
+    name: "CSS",
     type: "Frontend",
   },
   {
@@ -39,9 +32,20 @@ export const skills = [
     name: "JavaScript",
     type: "Frontend",
   },
+
+  {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
+  },
   {
     imageUrl: react,
-    name: "React",
+    name: "React.js",
+    type: "Frontend",
+  },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
     type: "Frontend",
   },
   {
@@ -59,6 +63,22 @@ export const skills = [
     name: "Chakra UI",
     type: "Frontend",
   },
+  {
+    imageUrl: git,
+    name: "Git",
+    type: "Version Control",
+  },
+  {
+    imageUrl: github,
+    name: "GitHub",
+    type: "Version Control",
+  },
+  {
+    imageUrl: firebase,
+    name: "Firebase",
+    type: "Deployment",
+  },
+
   {
     imageUrl: vercel,
     name: "Vercel",
