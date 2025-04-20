@@ -3,13 +3,13 @@ import ProfPic from "../assets/profilePic/ProfPic.jpg";
 
 const About = () => {
   const handleDownloadResume = () => {
-    const resumeUrl = "/Aastha_Tech/Aastha_Frontend_Dev_Resume.pdf";
+    const resumeUrl = "/Aastha_Tech/Aastha_Dev_Frontend.pdf";
     console.log("button clicked!");
     window.open(resumeUrl, "_blank");
 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Aastha_Frontend_Dev_Resume.pdf";
+    link.download = "Aastha_Dev_Frontend.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -67,17 +67,15 @@ const About = () => {
             <span className="bg-gradient-to-r from-blue-500 to-[#84d6ff] bg-clip-text text-2xl text-transparent font-extrabold">
               Frontend Developer
             </span>{" "}
-            who enjoys bringing creative ideas to life through code. With a
-            strong foundation in React, Redux, and JavaScript, I focus on
-            building intuitive, high-performance, and accessible user
-            interfaces.
+            passionate about creating intuitive, high-performance user
+            interfaces. With expertise in React, Redux, Next.js, TypeScript, and
+            JavaScript, I focus on delivering seamless experiences while staying
+            up-to-date with the latest web development trends.
           </p>
 
           <p className="text-lg sm:text-2xl leading-relaxed text-gray-300">
-            I constantly explore new technologies and best practices to stay
-            ahead in the ever-evolving web development landscape. When I’m not
-            coding, you’ll find me exploring new places, reading about UI/UX
-            trends, or experimenting with side projects.
+            When I’m not coding, I enjoy exploring new places, reading about
+            UI/UX design, and working on side projects.
           </p>
           <button
             onClick={handleDownloadResume}

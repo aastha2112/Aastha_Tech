@@ -6,6 +6,7 @@ import Digital_Clock from "../assets/ProjectSS/Digital_Clock.png";
 import Weatherly from "../assets/ProjectSS/WeatherlySS.png";
 import StoryCraftUI from "../assets/ProjectSS/StoryCraftUI.png";
 import QuickChat from "../assets/ProjectSS/QuickChat.png";
+import Nuke from "../assets/ProjectSS/Nuke.png";
 
 const Projects = () => {
   return (
@@ -19,13 +20,14 @@ const Projects = () => {
       <div className="w-full max-w-6xl flex flex-col md:grid md:grid-cols-2  gap-12 md:gap-14">
         {[
           {
-            name: "QuickChat Buddy",
-            img: QuickChat,
-            liveLink: "https://quickchatbuddy.web.app/",
-            codeLink: "https://github.com/aastha2112/Quick_Chat",
-            desc: "QuickChat is a responsive chatbot app with real-time messaging, Firebase authentication, and a friendly bot named Bubbles.",
-            tech: ["React", "Redux", "TailwindCSS", "Firebase"],
+            name: "Nuke Shop",
+            img: Nuke,
+            liveLink: "https://nuke-p4rh.vercel.app/",
+            codeLink: "https://github.com/aastha2112/Nuke",
+            desc: "Nuke is a modern fashion and skincare e-commerce website with a sleek design, smooth navigation, and a fully responsive user experience.",
+            tech: ["Next.js", "TypeScript", "TailwindCSS", "Wix", "Vercel"],
           },
+
           {
             name: "Weatherly",
             img: Weatherly,
@@ -35,14 +37,6 @@ const Projects = () => {
             tech: ["React", "TailwindCSS", "Vercel"],
           },
           {
-            name: "Trendify",
-            img: Trendify,
-            liveLink: "https://aastha2112.github.io/Trendify/",
-            codeLink: "https://github.com/aastha2112/Trendify",
-            desc: "A modern fashion e-commerce platform with user authentication, real-time inventory, and seamless payment integration.",
-            tech: ["HTML", "CSS", "JavaScript", "Glitch"],
-          },
-          {
             name: "StoryCraft",
             img: StoryCraftUI,
             liveLink: "https://storycraft-baba5.web.app/",
@@ -50,6 +44,23 @@ const Projects = () => {
             desc: "A collaborative storytelling platform with real-time contributions and user authentication.",
             tech: ["React", "Redux", "Firebase", "ChakraUI"],
           },
+          {
+            name: "QuickChat Buddy",
+            img: QuickChat,
+            liveLink: "https://quickchatbuddy.web.app/",
+            codeLink: "https://github.com/aastha2112/Quick_Chat",
+            desc: "QuickChat is a responsive chatbot app with real-time messaging, Firebase authentication, and a friendly bot named Bubbles.",
+            tech: ["React", "Redux", "TailwindCSS", "Firebase"],
+          },
+          {
+            name: "Trendify",
+            img: Trendify,
+            liveLink: "https://aastha2112.github.io/Trendify/",
+            codeLink: "https://github.com/aastha2112/Trendify",
+            desc: "A modern fashion e-commerce platform with user authentication, real-time inventory, and seamless payment integration.",
+            tech: ["HTML", "CSS", "JavaScript", "Glitch"],
+          },
+
           {
             name: "Drum Kit",
             img: Drum_Kit,

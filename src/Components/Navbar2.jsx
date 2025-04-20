@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = ({ scrollToSection, refs }) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleDownloadResume = () => {
-    const resumeUrl = "/Aastha_Tech/Aastha_Frontend_Dev_Resume.pdf";
+    const resumeUrl = "/Aastha_Tech/Aastha_Dev_Frontend.pdf";
     console.log("button clicked!");
     window.open(resumeUrl, "_blank");
 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Aastha_Frontend_Dev_Resume.pdf";
+    link.download = "Aastha_Dev_Frontend.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
