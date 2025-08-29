@@ -99,13 +99,13 @@ const Home = ({ scrollToSection, refs }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
         >
-          FRONT-END DEVELOPER
+          SOFTWARE DEVELOPER
         </motion.p>
 
         <p className="text-md lg:text-left md:text-left sm:text-lg mt-4 text-gray-300 px-2 sm:px-0 ">
-          A Web Developer based in India, specializing in React, Redux, and
-          JavaScript. Passionate about clean code, performance, and seamless
-          user experiences.
+          A Software Developer based in India, specializing in React, Next,
+          TypeScript and JavaScript. Passionate about clean code, performance,
+          and seamless user experiences.
         </p>
 
         <h3 className="mt-5 text-lg font-medium text-white">

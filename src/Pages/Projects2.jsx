@@ -7,6 +7,7 @@ import Weatherly from "../assets/ProjectSS/WeatherlySS.png";
 import StoryCraftUI from "../assets/ProjectSS/StoryCraftUI.png";
 import QuickChat from "../assets/ProjectSS/QuickChat.png";
 import Nuke from "../assets/ProjectSS/Nuke.png";
+import HusanPortfolio from "../assets/ProjectSS/husan-portfolio.png";
 
 const Projects = () => {
   return (
@@ -27,7 +28,19 @@ const Projects = () => {
             desc: "Nuke is a modern fashion and skincare e-commerce website with a sleek design, smooth navigation, and a fully responsive user experience.",
             tech: ["Next.js", "TypeScript", "TailwindCSS", "Wix", "Vercel"],
           },
-
+          {
+            name: "Portfolio - Mr. Husan",
+            img: HusanPortfolio,
+            liveLink: "https://husan-portfolio.vercel.app/",
+            desc: "An order management portfolio with streamlined processes, efficient coordination, and a smooth, responsive user experience.",
+            tech: [
+              "React.js",
+              "TypeScript",
+              "TailwindCSS",
+              "Framer",
+              "EmailJS",
+            ],
+          },
           {
             name: "Weatherly",
             img: Weatherly,

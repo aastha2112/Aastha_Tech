@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
-import ProfPic from "../assets/profilePic/ProfPic.jpg";
+import ProfPic from "../assets/profilePic/profilePic.jpg";
 
 const About = () => {
   const handleDownloadResume = () => {
-    const resumeUrl = "/Aastha_Tech/Aastha_Dev_Frontend.pdf";
+    const resumeUrl = "/Aastha_Tech/Aastha_SDE.pdf";
     console.log("button clicked!");
     window.open(resumeUrl, "_blank");
 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Aastha_Dev_Frontend.pdf";
+    link.download = "Aastha_SDE.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -43,7 +43,7 @@ const About = () => {
       >
         {/* Image */}
         <motion.div
-          className="relative bg-gradient-to-b from-blue-600 to-[#2f6690] p-4 md:p-6 rounded-xl shadow-xl"
+          className="relative bg-gradient-to-b from-blue-600 to-[#2f6690] p-4 md:p-6 rounded-full shadow-xl "
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -51,7 +51,7 @@ const About = () => {
           <img
             src={ProfPic}
             alt="Profile Picture"
-            className="w-[200px] sm:w-[250px] md:w-[320px] rounded-lg border-4 border-[#eef4ed]"
+            className="w-[200px]  sm:w-[250px] md:w-[320px] rounded-full border-4 border-[#eef4ed]  "
           />
         </motion.div>
 
@@ -65,12 +65,13 @@ const About = () => {
           <p className="text-lg sm:text-2xl leading-relaxed text-gray-300 mb-5">
             I am a detail-oriented{" "}
             <span className="bg-gradient-to-r from-blue-500 to-[#84d6ff] bg-clip-text text-2xl text-transparent font-extrabold">
-              Frontend Developer
+              Software Developer
             </span>{" "}
-            passionate about creating intuitive, high-performance user
-            interfaces. With expertise in React, Redux, Next.js, TypeScript, and
-            JavaScript, I focus on delivering seamless experiences while staying
-            up-to-date with the latest web development trends.
+            passionate about building intuitive, high-performance applications.
+            With expertise in React, Redux, Next.js, TypeScript, and JavaScript,
+            along with backend knowledge in Node.js, Express.js, Nest.js and
+            databases, I focus on delivering seamless end-to-end solutions while
+            staying up-to-date with the latest development trends.
           </p>
 
           <p className="text-lg sm:text-2xl leading-relaxed text-gray-300">

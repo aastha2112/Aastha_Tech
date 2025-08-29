@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = ({ scrollToSection, refs }) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleDownloadResume = () => {
-    const resumeUrl = "/Aastha_Tech/Aastha_Dev_Frontend.pdf";
+    const resumeUrl = "/Aastha_Tech/Aastha_SDE.pdf";
     console.log("button clicked!");
     window.open(resumeUrl, "_blank");
 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Aastha_Dev_Frontend.pdf";
+    link.download = "Aastha_SDE.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -24,15 +24,19 @@ const Navbar = ({ scrollToSection, refs }) => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-center space-x-8">
-          {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-            <button
-              key={item}
-              className="navlink text-white text-center text-lg hover:text-[#81c3d7] transition-all"
-              onClick={() => scrollToSection(refs[`${item.toLowerCase()}Ref`])}
-            >
-              {item}
-            </button>
-          ))}
+          {["Home", "About", "Skills", "Experience", "Projects", "Contact"].map(
+            (item) => (
+              <button
+                key={item}
+                className="navlink text-white text-center text-lg hover:text-[#81c3d7] transition-all"
+                onClick={() =>
+                  scrollToSection(refs[`${item.toLowerCase()}Ref`])
+                }
+              >
+                {item}
+              </button>
+            )
+          )}
           <button
             onClick={handleDownloadResume}
             className="navlink text-white text-center text-lg hover:text-[#81c3d7] transition-all"
@@ -72,20 +76,25 @@ const Navbar = ({ scrollToSection, refs }) => {
 
             {/* Sidebar Links */}
             <div className="flex flex-col space-y-6 text-white text-lg w-full">
-              {["Home", "About", "Skills", "Projects", "Contact"].map(
-                (item) => (
-                  <button
-                    key={item}
-                    className="navlink hover:text-[#81c3d7] transition-all text-left w-full px-4"
-                    onClick={() => {
-                      scrollToSection(refs[`${item.toLowerCase()}Ref`]);
-                      setIsOpen(false);
-                    }}
-                  >
-                    {item}
-                  </button>
-                )
-              )}
+              {[
+                "Home",
+                "About",
+                "Skills",
+                "Experience",
+                "Projects",
+                "Contact",
+              ].map((item) => (
+                <button
+                  key={item}
+                  className="navlink hover:text-[#81c3d7] transition-all text-left w-full px-4"
+                  onClick={() => {
+                    scrollToSection(refs[`${item.toLowerCase()}Ref`]);
+                    setIsOpen(false);
+                  }}
+                >
+                  {item}
+                </button>
+              ))}
               <button
                 onClick={handleDownloadResume}
                 className="navlink hover:text-[#81c3d7] transition-all text-left w-full px-4"
