@@ -7,7 +7,7 @@ const experiences = [
     company: "Betatest Solutions Pvt. Ltd.",
     period: "Feb, 2025 - Present",
     description:
-      "Built full-stack applications with React.js, Next.js, Nest.js, and PostgreSQL, including APIs, authentication, integrations, and a React Native mobile app.",
+      "Designing and developing full-stack web applications using React.js, Next.js, Nest.js, and PostgreSQL. Built and integrated REST APIs, authentication systems, and third-party services. Contributed to a React Native mobile app, ensuring cross-platform functionality and smooth user experience.",
     icon: <FaCode className="text-purple-400 text-3xl" />,
   },
 
@@ -16,7 +16,7 @@ const experiences = [
     company: "Masai School",
     period: "Oct, 2024 - June, 2025",
     description:
-      "Developed end-to-end apps using React.js, Node.js, and Firebase. Implemented authentication, database models, and APIs.",
+      "Developed and deployed end-to-end applications with React.js, Node.js, and Firebase. Implemented user authentication, database models, and API integrations. Collaborated in agile, team-based projects, focusing on clean code and scalability.",
     icon: <FaDatabase className="text-cyan-400 text-3xl" />,
   },
   {
@@ -24,7 +24,7 @@ const experiences = [
     company: "Freelance",
     period: "May, 2024 - Present",
     description:
-      "Built responsive, high-performance UIs with React, Redux, and Tailwind. Focused on seamless UX and reusable components.",
+      "Built responsive, high-performance UIs with React, Redux, and Tailwind CSS, emphasizing seamless UX. Developed personal portfolio websites and interactive web apps with smooth animations and reusable components. Experimented with state management, API integration, and deployment workflows to strengthen frontend expertise.",
     icon: <FaReact className="text-blue-400 text-3xl" />,
   },
 ];
